@@ -1,6 +1,36 @@
-import dlangui : helloworld;
-import std.stdio;
-void main()
+module app;
+
+import dlangui;
+
+class MyWindow : Window
 {
-	writeln("Edit source/app.d to start your project.");
+    override void show()
+    {
+    }
+
+    override @property dstring windowCaption() const
+    {
+        return "DForge";
+    }
+
+    override @property void windowCaption(dstring caption)
+    {
+    }
+
+    override void windowIcon(DrawBufRef icon)
+    {
+    }
+
+    override void invalidate()
+    {
+    }
+
+    override void close()
+    {
+    }
+}
+
+void main(string[] args)
+{
+    UIAppMain(args);
 }
